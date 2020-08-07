@@ -4,6 +4,6 @@ import com.neusoft.domain.Admin;
 
 public interface AdminDao
 {
-    public Admin getAdminByNameByPass(String adminName,String Password);
+    public Admin getAdminByNameByPass(String adminName,String password);
 
 }

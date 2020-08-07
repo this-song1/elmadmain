@@ -22,7 +22,7 @@ public class Admin
         return adminId;
     }
 
-    public void setAdminId(Integer adminId)
+    public void setAdminId(String adminId)
     {
         this.adminId = adminId;
     }
@@ -42,7 +42,7 @@ public class Admin
         return password;
     }
 
-    public void setPassword(Integer password)
+    public void setPassword(String password)
     {
         this.password = password;
     }

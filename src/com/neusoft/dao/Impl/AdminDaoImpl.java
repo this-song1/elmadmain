@@ -1,11 +1,10 @@
 package com.neusoft.dao.Impl;
 
-import com.mysql.jdbc.PreparedStatement;
 import com.neusoft.dao.AdminDao;
 import com.neusoft.domain.Admin;
+import com.neusoft.utils.JDBCUtils;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class AdminDaoImpl implements AdminDao
 {
@@ -15,10 +14,28 @@ public class AdminDaoImpl implements AdminDao
 
 
     @Override
-    public Admin getAdminByNameByPass(String adminName, String Password)
+    public Admin getAdminByNameByPass(String adminName, String password)
     {
+        Admin admin = null;
+        String sql = "select * from admin where adminName = ? and password = ?";
         try{
+           conn = JDBCUtils.getConnection();
+           pstmt = conn.prepareStatement(sql);
+           pstmt.setString(1,adminName);
+           pstmt.setString(2,password);
+           rs = pstmt.executeQuery();
+           while (rs.next())
+           {
+               admin = new Admin();
+               admin.setAdminId("adminId");
+               admin.setAdminName("adminName");
+               admin.setPassword("password");
+           }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(rs,pstmt,conn);
         }
 
         return null;
