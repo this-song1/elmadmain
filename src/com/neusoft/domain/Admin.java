@@ -4,13 +4,13 @@ public class Admin
 {
   private Integer adminId;
   private String adminName;
-  private Integer password;
+  private String password;
 
     public Admin()
     {
     }
 
-    public Admin(Integer adminId, String adminName, Integer password)
+    public Admin(Integer adminId, String adminName, String password)
     {
         this.adminId = adminId;
         this.adminName = adminName;
@@ -22,7 +22,7 @@ public class Admin
         return adminId;
     }
 
-    public void setAdminId(String adminId)
+    public void setAdminId(Integer adminId)
     {
         this.adminId = adminId;
     }
@@ -37,7 +37,7 @@ public class Admin
         this.adminName = adminName;
     }
 
-    public Integer getPassword()
+    public String getPassword()
     {
         return password;
     }
