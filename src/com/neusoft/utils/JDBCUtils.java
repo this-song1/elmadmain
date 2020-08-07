@@ -37,7 +37,7 @@ public class JDBCUtils
         return ds.getConnection();
     }
     // close
-    public static void close(Statement stmt, Connection conn, ResultSet rs){
+    public static void close(ResultSet rs, Statement stmt, Connection conn){
 
         if (stmt != null) {
             try {
@@ -67,7 +67,7 @@ public class JDBCUtils
 
     public static void close(Statement stmt, Connection conn){
 
-      close(stmt, conn, null);
+        close(null, stmt, conn);
 
     }
 
