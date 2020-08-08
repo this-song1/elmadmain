@@ -28,7 +28,7 @@ public class Businessviewimpl implements Businessview
     }
 
     /**
-     * 搜索
+     * 搜索商家
      */
     @Override
     public void listBusinessBySearch()
@@ -57,6 +57,28 @@ public class Businessviewimpl implements Businessview
             System.out.println(b.getBusinessId()+"\t"+b.getBusinessName()+"\t"+b.getBusinessAddress()+"\t"+b.getBusinessExplain()+"\t"+b.getStartPrice()+"\t"+b.getDeliveryPrice());
         }
     }
+    /**
+     * 保存商家
+     */
+    @Override
+    public void saveBusiness()
+    {
+        System.out.println("请输入商家名字：");
+        String businessName = input.next();
+
+        BusinessDaoImpl dao = new BusinessDaoImpl();
+        int businessId = dao.saveBusiness(businessName);
+        if (businessId > 0){
+            System.out.println("新建商家成功！ 商家编号为" + businessId);
+
+        }else{
+            System.out.println("新建商家失败！" );
+
+        }
+
+
+    }
+
 
 
 

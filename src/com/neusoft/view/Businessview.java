@@ -4,6 +4,7 @@ public interface Businessview
 {
     public void listBusinessAll();
     public void listBusinessBySearch();
+    public void saveBusiness();
 
 
 }
