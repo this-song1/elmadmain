@@ -49,7 +49,7 @@ public class ElmAdmin
                         businessview.listBusinessAll();
                         break;
                     case 2:
-                        System.out.println("搜索商家");
+                        businessview.listBusinessBySearch();
                         break;
                     case 3:
                         System.out.println("新建商家");
