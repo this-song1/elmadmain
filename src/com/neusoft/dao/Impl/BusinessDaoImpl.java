@@ -21,6 +21,7 @@ public class BusinessDaoImpl implements BusinessDao
     @Override
     public List<Business> listBusniness(String businessName, String businessAddress)
     {
+        List<Business> list = new ArrayList<>();
         StringBuffer sql = new StringBuffer("select * from business where 1=1");
         if(businessName != null && !businessName.equals(""))
         {
@@ -48,19 +49,19 @@ public class BusinessDaoImpl implements BusinessDao
                 business.setBusinessName(rs.getString("businessName"));
                 business.setBusinessAddress(rs.getString("businessAddress"));
                 business.setBusinessExplain(rs.getString("businessExplain"));
-                business.setStartPrice(rs.getDouble("startPrice"));
+                business.setStartPrice(rs.getDouble("starPrice"));
                 business.setDeliveryPrice(rs.getDouble("deliveryPrice"));
 
-                new ArrayList<>()
-
-
+                list.add(business);
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            JDBCUtils.close(rs,pstmt,conn);
         }
 
 
-        return null;
+        return list;
     }
 }
