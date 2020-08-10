@@ -23,6 +23,7 @@ public class FoodDaoImpl implements FoodDao
     public List<Food> findAll(Integer businessId)
     {
         ArrayList<Food> list = new ArrayList<>();
+
         String sql = "select * from food where businessId= ?";
         try{
             conn = JDBCUtils.getConnection();
