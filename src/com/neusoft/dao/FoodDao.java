@@ -12,4 +12,7 @@ public interface FoodDao
     public int saveFood(Food food);
     public int updateFood(Food food);
     public int removeFood(Integer foodId);
+
+
+
 }
