@@ -10,5 +10,11 @@ public interface BusinessDao
    public List<Business> listBusniness(String businessName,String businessAddress);
    public int saveBusiness(String businessName);
 
+    public Business getBusinessByNameByPass(Integer businessId, String password);
+    public int removeBusiness(int businessId);
+
+    public Business getBusinessByBusinessId(Integer businessId);
+
+    public int updateBusiness( Business business);
 
 }
