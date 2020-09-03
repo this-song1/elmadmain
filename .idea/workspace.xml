@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -26,6 +26,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -43,7 +44,7 @@
       <recent name="E:\elmadmin\elmadmain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ElmBusiness">
+  <component name="RunManager" selected="Application.s1">
     <configuration name="ElmAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.neusoft.ElmAdmin" />
       <module name="elmadmain" />
@@ -70,16 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="elmadmain" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="asd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="asd" />
       <module name="elmadmain" />
@@ -100,13 +91,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="s1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s1" />
+      <module name="elmadmain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.s1" />
         <item itemvalue="Application.ElmBusiness" />
         <item itemvalue="Application.ElmAdmin" />
         <item itemvalue="Application.bisnasetest" />
         <item itemvalue="Application.asd" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +133,9 @@
       <workItem from="1596764347433" duration="4106000" />
       <workItem from="1596772084180" duration="10228000" />
       <workItem from="1596858699001" duration="20082000" />
-      <workItem from="1597019247227" duration="18296000" />
+      <workItem from="1597019247227" duration="19747000" />
+      <workItem from="1597216150550" duration="4633000" />
+      <workItem from="1598410179188" duration="22000" />
     </task>
     <servers />
   </component>
@@ -151,22 +151,22 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="885" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1597048680835" />
-    <state width="1396" height="517" key="GridCell.Tab.0.bottom" timestamp="1597055696897">
+    <state width="1301" height="159" key="GridCell.Tab.0.bottom" timestamp="1597222890931">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="517" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1597055696897" />
-    <state width="1396" height="517" key="GridCell.Tab.0.center" timestamp="1597055696897">
+    <state width="1301" height="159" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1597222890931" />
+    <state width="1301" height="159" key="GridCell.Tab.0.center" timestamp="1597222890931">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="517" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1597055696897" />
-    <state width="1396" height="517" key="GridCell.Tab.0.left" timestamp="1597055696897">
+    <state width="1301" height="159" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1597222890931" />
+    <state width="1301" height="159" key="GridCell.Tab.0.left" timestamp="1597222890931">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="517" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1597055696897" />
-    <state width="1396" height="517" key="GridCell.Tab.0.right" timestamp="1597055696897">
+    <state width="1301" height="159" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1597222890931" />
+    <state width="1301" height="159" key="GridCell.Tab.0.right" timestamp="1597222890931">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1396" height="517" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1597055696897" />
+    <state width="1301" height="159" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1597222890931" />
     <state width="1396" height="448" key="GridCell.Tab.1.bottom" timestamp="1596884350037">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -187,10 +187,14 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="198" y="111" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1596859233539" />
-    <state x="412" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1597019247227">
+    <state x="412" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1598410179755">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="412" y="256" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1597019247227" />
+    <state x="412" y="256" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1598410179755" />
+    <state x="0" y="90" key="new project wizard" timestamp="1597055840636">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="0" y="90" key="new project wizard/0.0.1440.860@0.0.1440.860" timestamp="1597055840636" />
     <state x="16" y="72" width="670" height="676" key="search.everywhere.popup" timestamp="1596880197002">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
